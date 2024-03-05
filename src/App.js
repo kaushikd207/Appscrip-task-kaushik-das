@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import Header from "./components/Header";
+import ProductBody from "./components/ProductBody";
+import FilterSection from "./components/FilterSection";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header />
+      <ProductBody />
+      <FilterSection />
+      <div className="footer">
+        <div className="boxFooter">
+          <h4>BE THE FIRST TO KNOW</h4>
+          <p>Sign Up for updates from metta muse</p>
+          <div className="searchBox">
+            <input></input>
+            <button>SUBSCRIBE</button>
+          </div>
+        </div>
+        <div className="boxFooter"></div>
+      </div>
+    </>
   );
 }
 

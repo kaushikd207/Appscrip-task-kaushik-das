@@ -1,38 +1,137 @@
-.App {
+body {
+  overflow-x: hidden;
+}
+.firstNav {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.headerIconItem {
+  padding: 15px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h5 {
+  display: inline;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.icon {
+  padding: 15px;
+  padding-top: 30px;
+}
+.subNav {
+  padding-top: 0;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin: auto;
+  padding-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.subHeader {
+  padding-bottom: 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+.subNav ul {
+  display: flex;
+  padding-top: 0;
+}
+.subNav ul li {
+  list-style-type: none;
+  padding: 25px;
+  font-size: 22px;
+  font-weight: bold;
+}
+li:hover {
+  border-bottom: 1px solid black;
+  cursor: pointer;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  transition-delay: 0s;
+}
+.section {
+  text-align: center;
+}
+.filterBar {
+  width: 95%;
+  height: 88px;
+  display: flex;
+  border: 1px solid #e5e5e5;
+  margin-left: 2.5%;
+}
+.itemNumber {
+  font-weight: bold;
+  margin: 37px 118px 25px 25px;
+}
+
+.cardBody {
+  width: 90%;
+  margin: 5%;
+}
+.card {
+  width: 21%;
+  margin: 10px 21px;
+}
+.card:hover {
+  border: 2px solid rgb(201, 192, 192);
+  cursor: pointer;
+}
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px 5px;
+}
+.cardImage > img {
+  width: 95%;
+  height: 180px;
+  margin: 5px 5px;
+  border-radius: 2px;
+}
+.locationIcon {
+  padding: 5px, 5px;
+}
+.filter {
+  display: flex;
+  align-items: center;
+}
+.sort {
+  width: 190px;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+.MuiButtonBase-root {
+  background-color: white;
+  color: black !important;
+  font-weight: bold;
+}
+.language {
+  margin: auto;
+}
+.footer {
+  width: 100%;
+  height: 750px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  background-color: black;
+}
+.boxFooter {
+  width: 45%;
+  height: 50%;
   color: white;
+  border: 1px solid red;
 }
-
-.App-link {
-  color: #61dafb;
+.searchBox {
+  width: 95%;
+  height: 48px;
+  display: flex;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input {
+  width: 583px;
+  height: 47px;
+}
+button {
+  border-radius: 5px;
+  color: white;
+  width: 190px;
+  background-color: black;
+  height: 48px;
+  border: 1px solid white;
 }
