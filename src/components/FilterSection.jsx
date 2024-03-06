@@ -21,7 +21,7 @@ const Card = ({ product }) => {
   );
 };
 
-const FilterSection = () => {
+const FilterSection = ({ handleButton, showFilter }) => {
   const [products, setProducts] = useState([]);
   const getData = async () => {
     const response = await fetch("https://fakestoreapi.com/products/");
@@ -37,7 +37,9 @@ const FilterSection = () => {
         <span className="itemNumber">{products?.length} ITEMS</span>
         <span className="filter">
           <ArrowBackIosNewIcon />
-          HIDE FILTER
+          <button onClick={handleButton}>
+            {showFilter ? "HIDE FILTER" : "SHOW FILTER"}
+          </button>
         </span>
         <span className="sort">
           <CustomizedMenus />

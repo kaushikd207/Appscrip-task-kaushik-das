@@ -61,11 +61,11 @@ li:hover {
 }
 
 .cardBody {
-  width: 90%;
-  margin: 5%;
+  width: 71%;
+  margin-left: auto;
 }
 .card {
-  width: 21%;
+  width: 28%;
   margin: 10px 21px;
 }
 .card:hover {
@@ -75,6 +75,7 @@ li:hover {
 .cardContainer {
   display: flex;
   flex-wrap: wrap;
+  width: 98%;
   padding: 5px 5px;
 }
 .cardImage > img {
@@ -116,7 +117,7 @@ li:hover {
   width: 45%;
   height: 50%;
   color: white;
-  border: 1px solid red;
+  border-bottom: 1px solid white;
 }
 .searchBox {
   width: 95%;
@@ -128,10 +129,26 @@ input {
   height: 47px;
 }
 button {
+  text-align: justify;
+  font-weight: bold;
+  background-color: white;
   border-radius: 5px;
-  color: white;
+  color: black;
   width: 190px;
-  background-color: black;
   height: 48px;
   border: 1px solid white;
+  cursor: pointer;
+}
+.accordion {
+  margin-left: 2.5%;
+  margin-top: 6%;
+  display: flex;
+  width: 340px;
+  position: absolute;
+  flex-wrap: wrap;
+  transition: all 0.25s ease-in;
+}
+.MuiAccordion-gutters {
+  height: 100px;
+  border: none !important;
 }
